@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Charlie's Angels</title>
+</head>
+<body>
+    <header>
+        <img src="images/CA-logo.png" alt="A white capital C and A logo">
+        <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero image and title -->
+        <section>
+            <div>
+                <img src="images/home-hero-img.jpg" alt="The top half of three women dressed in black facing away from the camera">
+                <h1>CONTACT US</h1>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section>
+            <h2>Contact form</h2>
+            <form action="https://formspree.io/f/xnqebkjv" method="POST">
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+
+                    <li>
+                        <label for="mail">Email: </label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+
+                    <li>
+                        <label for="telephone">Phone number: </label>
+                        <input type="tel" id="telephone" name="user_telephone">
+                    </li>
+
+                    <li>
+                        <label for="agent_preference">Agent preference: </label>
+                        <select id="user_agent_preference" name="agent_preference">
+                          <option value="alex">Alex</option>
+                          <option value="dylan">Dylan</option>
+                          <option value="natalie">Natalie</option>
+                          <option value="all_three">All three</option>
+                          <option value="none">No preference</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="msg">Message: </label>
+                        <textarea id="msg" name="user_msg" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </li>
+                </ul>
+            </form>
+ 
+        </section>
+    </main>
+    <footer>
+        <p>Footer message</p>
+    </footer>
+</body>
+</html>
