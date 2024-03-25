@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie's Angels</title>
-    <script src="scripts.js" async></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js" async></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
@@ -23,7 +23,9 @@
         <p>Your premier destination for covert operations</p>
     </header>
 
+
     <main>
+
         <section>
             <h2>About Us</h2>
             <p>Welcome to Charlie's Angels Agency, where secrecy is our specialty. As a top-secret organization, we specialize in covert missions and discreet operations. Our team of elite agents is ready to tackle any challenge with precision and efficiency. Whether it's surveillance, intelligence gathering, or espionage, we've got you covered.</p>
@@ -31,9 +33,12 @@
 
         <section>
 
-            <h2>Meet Our Boss</h2>
-
             <div>
+            <h2>Meet Our Boss</h2>
+            </div>
+
+            <div class="Profile-Container Boss_Profile">
+                <div>
                 <img src="./images/charlieT-Profile.png" alt="Boss">
                 <br>
                 <p>The Charlie Townsend (Founder of Townsend Agency)</p>
@@ -48,38 +53,42 @@
                      </ul>  
               
             </div>
+        </div>
 
         </section>
         <section>
 
-            <h2>Meet Our Angels</h2>
+            <div> <h2>Meet Our Angels</h2></div>
+           
 
-
-            <div>
-                <img src="./images/NatalieCook-Profile.png" alt="Angel 1">
-                <p>Agent Natalie Cook</p>
-                <p>Specialty: Master of Disguise & Tactical Expert</p>
-                <p>Bio: </p>
-                <br>
-                <ul>
+     <div class="profile-container angel__profile">
+            <div class="profile"> 
+                <img src="./images/NatalieCook-Profile.png" alt="Angel 1" class="Profile__img">
+                <h3 class="profile__h3">Agent Natalie Cook</h3>
+                <div>
+                 <h4 class="profile__h4" >Specialty: Master of Disguise & Tactical Expert</h4>
+                 <h5 class="profile__h5">Bio: </h5>
+                 <br>
+                 <ul class="list-profile">
                     <li>Agent Natalie Cook is the epitome of versatility and charm within the ranks of "Charlie's Angels." With her infectious energy and quick wit, Natalie brings a dynamic presence to every mission, earning her the admiration of both colleagues and adversaries alike.</li>
                     <br>
                     <li>A former model turned elite operative, Natalie's journey into the world of espionage was anything but conventional. Yet, her innate ability to adapt to any situation and blend seamlessly into any environment quickly caught the attention of Charlie Townsend, who saw in her the potential for greatness.</li>
                     <br>
                     <li>As a master of disguise, Natalie's talent for assuming various personas and identities is unparalleled, allowing her to infiltrate even the most secure locations with ease. Whether posing as a high-society socialite or a skilled athlete, Natalie's chameleon-like abilities make her an indispensable asset in the field.</li>
                  </ul>  
+                 </div>
             
             
             </div>
 
 
-            <div>
+            <div class="profile"> 
                 <img src="./images/AlexMunday-Profile.png" alt="Angel 2">
-                <p>Agent Alex Munday</p>
-                <p>Specialty: Strategic Analyst & Martial Arts Expert</p>
-                <p>Bio:</p>
+                <h3 class="profile__h3">Agent Alex Munday</h3>
+                <h4 class="profile__h4">Specialty: Strategic Analyst & Martial Arts Expert</h4>
+                <h5 class="profile__h5">Bio:</h5">
                 <br>
-                <ul>
+                <ul  class="list-profile">
                     <li>Agent Alex Munday is the epitome of grace under pressure within the elite ranks of "Charlie's Angels." With her sharp intellect and unparalleled martial arts skills, Alex embodies the perfect blend of brains and brawn, making her an indispensable asset to the team.</li>
                     <br>
                     <li>A former software engineer with a knack for decoding complex algorithms, Alex's journey into the world of espionage began when she caught the eye of Charlie Townsend with her exceptional problem-solving abilities. Recognizing her potential, Charlie recruited her to join his team of Angels, where she quickly proved herself as an invaluable strategist and analyst.</li>
@@ -90,13 +99,13 @@
             </div>
 
 
-            <div>
+            <div> 
                 <img src="./images/Dylan-Sanders-Profile.png" alt="Angel 3">
-                <p>Agent </p>
-                <p>Specialty: Field Commander & Weapons Specialist</p>
-                <p>Bio:</p>
+                <h3 class="profile__h3">Agent </h3>
+                <h4 class="profile__h4">Specialty: Field Commander & Weapons Specialist</h4>
+                <h5 class="profile__h5">Bio:</h5>
                 <br>
-                <ul>
+                <ul  class="list-profile">
                     <li>Agent Dylan Sanders is the fearless leader and heart of the renowned "Charlie's Angels" team. With her unmatched courage, determination, and expertise in weaponry, Dylan is a force to be reckoned with in the world of espionage.</li>
                     <br>
                     <li>A former juvenile delinquent turned top-tier operative, Dylan's journey into the world of espionage began when she caught the eye of Charlie Townsend with her unmatched combat skills and street smarts. Recognizing her potential, Charlie recruited her to lead his team of Angels, where she quickly proved herself as an indomitable force on the field.</li>
@@ -104,6 +113,7 @@
                     <li>As the team's field commander, Dylan is known for her strategic brilliance and fearlessness in the face of danger. Whether it's leading a tactical assault or navigating treacherous terrain, Dylan's leadership ensures the success of every mission undertaken by the agency.</li>
                   </ul>  
             </div>
+        </div>
 
         </section>
 
@@ -122,7 +132,6 @@
 
 </main>
 <footer>
-    <p>Footer message</p>
     <p>&copy; 2024 CA Spies Agency. All rights reserved.</p>
     </section>
 </footer>
