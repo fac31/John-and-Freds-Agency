@@ -6,13 +6,13 @@
     <title>Contact | Charlie's Angels</title>
 </head>
 <body>
-    <header>
-        <img src="images/CA-logo.png" alt="A white capital C and A logo">
+    <header class="navbar">
+        <a href="index.html"><img src="images/CA-logo.png" alt="A white capital C and A logo" class="navbar__img"></a>
         <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+        <ul class="navbar__ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         </nav>
     </header>
@@ -20,17 +20,17 @@
 
         <!-- Hero image and title -->
         <section>
-            <div>
-                <img src="images/home-hero-img.jpg" alt="The top half of three women dressed in black facing away from the camera">
-                <h1>CONTACT US</h1>
+            <div class="hero">
+                <img src="images/home-hero-img.jpg" alt="The top half of three women dressed in black facing away from the camera" class="hero__img">
+                <h1 class="hero__h1">CONTACT US</h1>
             </div>
         </section>
 
         <!-- Contact form -->
         <section>
-            <h2>Contact form</h2>
+            <h2 class="contact-form__h2">Contact form</h2>
             <form action="https://formspree.io/f/xnqebkjv" method="POST">
-                <ul>
+                <ul class="contact-form__ul">
                     <li>
                         <label for="name">Name: </label>
                         <input type="text" id="name" name="user_name">
@@ -62,8 +62,8 @@
                         <textarea id="msg" name="user_msg" cols="30" rows="10"></textarea>
                     </li>
                     <li>
-                        <button type="submit">Submit</button>
-                        <button type="reset">Clear</button>
+                        <button type="submit" class="contact-form__btn contact-form__btn--submit">Submit</button>
+                        <button type="reset" class="contact-form__btn contact-form__btn--reset">Clear</button>
                     </li>
                 </ul>
             </form>
@@ -71,21 +71,20 @@
         </section>
         
         <section>
-
-            <h2>Contact Us</h2>
-
-            <p>If you're in need of our services or have inquiries, please contact us using the information below:</p>
-            <p>Email: angels@townsendagency.com</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Location: Unknown! Duhh, we are spies. Thats on PERIODDD!</p>
-            <p><a href="">Get in touch</a></p>
-
+            <div class="container container--black"></div>>
+            <h2 class="contact-us__h2">Contact Us</h2>
+            <p class="contact-us__p">If you're in need of our services or have inquiries, please contact us using the information below:</p>
+            <ul class="contact-us__ul">
+                <li>Email: angels@townsendagency.com</li>
+                <li>Phone: (555) 123-4567</li>
+                <li>Location: Unknown! Duhh, we are spies. Thats on PERIODDD!</li>
+                <li>Or use our <a href="contact.html">contact form</a></li>
+            </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>Footer message</p>
-        <p>&copy; 2024 CA Spies Agency. All rights reserved.</p>
-        </section>
+    <footer class="footer">
+        <p class="footer__p">&copy; 2024 CA Spies Agency. All rights reserved.</p>
     </footer>
 </body>
 </html>
