@@ -4,10 +4,6 @@
  * SETTINGS
  * Global...............Globally-available variables and config.
  *
- * GENERIC
- * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
- *
  * BASE
  * Headings.............H1–H6 styles.
  *
@@ -41,6 +37,8 @@ body {
 
  /* Component */
 
+/* Hero */
+
  .hero {
     position: relative;
     min-width: 90%;
@@ -58,6 +56,40 @@ body {
 
 .hero__img {
     width: 100%;
+}
+
+/* Containers */
+
+.container {
+    width: 100%;
+    height: 863px;
+}
+
+.container--black {
+    background-color: #1a1a1a;
+}
+
+/* service cards */
+
+.services__h2, .card__h3, .card__p {
+    color: white;
+}
+
+.services__h2 {
+    text-align: center;
+}
+
+.services__cards {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.card {
+    min-width: 33%;
+    min-height: 33%;
+    background-color: #DC3333;
 }
 
 
