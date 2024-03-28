@@ -31,7 +31,7 @@
     font-weight: 400;
 }
 
-.h2--red {
+.header--red {
     color: #D71616;
 }
 
@@ -130,6 +130,8 @@ body {
 
 .image-text {
     display: flex;
+    margin: 2rem 0 2rem 0;
+    gap: 2rem;
 }
 
 .image-text--reverse {
