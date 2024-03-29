@@ -7,8 +7,7 @@
  * BASE
  * Headings.............H1–H6 styles.
  *
- * OBJECTS
- * Wrappers.............Wrsapping and constraining elements.
+ * UTILITY
  *
  * COMPONENTS
  * Page-head............The main page header.
@@ -19,24 +18,26 @@
  */
 
 
- /* Settings */
+ /* SETTINGS */
  
  * {
     box-sizing: border-box;
  }
 
- /* Base */
+ /* BASE */
  h1, h2, h3, h4, h5, h6 {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
 }
 
-.header--red {
-    color: #D71616;
-}
-
 body {
     font-family: "Varela", sans-serif;
+}
+
+/* UTILITY */
+
+.header--red {
+    color: #D71616;
 }
 
 .flex-column-center {
@@ -46,7 +47,11 @@ body {
     justify-content: center;
 }
 
- /* Component */
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+ /* COMPONENTS */
 
 /* Hero */
 
@@ -91,8 +96,6 @@ body {
     padding: 10%;
 }
 
-
-
 /* service cards */
 
 .services__h2, .card__h3, .card__p {
@@ -118,7 +121,6 @@ body {
     min-width: 25%;
     min-height: 295px;
     background-color: #DC3333;
-    border-radius: 10px;
     padding: 2rem;
 }
 
@@ -128,14 +130,71 @@ body {
 
 /* text and image */
 
+.why-us__h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
 .image-text {
     display: flex;
     margin: 2rem 0 2rem 0;
-    gap: 2rem;
+    gap: 10rem;
+    align-items: center;
 }
 
 .image-text--reverse {
     flex-direction: row-reverse;
 }
 
+.image-text__img {
+    max-width: 50%;
+}
+
+.image-text__text {
+    max-width: 35%;
+}
+
+ /* stats */
+
+ .stats__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+ }
+
+.stats__ul {
+    color: white;
+    list-style-type: none;
+    text-indent: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ /* contact-us */
+
+.contact-us__ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-us__ul li {
+    padding: 0.5rem;
+}
+
+ /* footer */
+
+.footer__container {
+    min-height: 100px;
+}
+
+.footer__p {
+    color: white;
+}
+
  /**Nav Header**/
+
+ .navbar__ul {
+    list-style-type: none;
+ }
