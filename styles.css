@@ -51,6 +51,12 @@ body {
     border-radius: 10px;
 }
 
+.list-style-none {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
  /* COMPONENTS */
 
 /* Hero */
@@ -172,12 +178,6 @@ body {
 }
 
  /* contact-us */
-
-.contact-us__ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
 
 .contact-us__ul li {
     padding: 0.5rem;
