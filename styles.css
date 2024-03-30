@@ -185,6 +185,10 @@ body {
 
  /* contact-form */
 
+form {
+    min-width: 400px;
+}
+
 .contact-form__ul li {
     color: white;
     padding: 0.5rem;
