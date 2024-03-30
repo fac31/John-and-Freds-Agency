@@ -183,6 +183,19 @@ body {
     padding: 0.5rem;
 }
 
+ /* contact-form */
+
+.contact-form__ul li {
+    color: white;
+    padding: 0.5rem;
+}
+
+.contact-form__ul input, textarea, select {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+}
+
  /* footer */
 
 .footer__container {
