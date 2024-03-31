@@ -102,6 +102,8 @@ body {
     padding: 10%;
 }
 
+
+
 /* service cards */
 
 .services__h2, .card__h3, .card__p {
@@ -212,6 +214,117 @@ form {
 
  /**Nav Header**/
 
- .navbar__ul {
-    list-style-type: none;
- }
+ .navbar {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* Distributes items evenly along the main axis */
+    padding: 10px; 
+    color: white; 
+    background-color: black; 
+}
+
+ .navbar__img {
+    margin-right: 20px; 
+}
+
+.navbar__ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__ul li {
+    display: inline-block; 
+}
+
+.navbar__ul li a {
+    text-decoration: none; 
+    padding: 10px; 
+    font-family: "Michroma", sans-serif;
+    color:  white;
+}
+
+    /*About us container  */
+
+    .aboutUsContainer {
+        display: flex; /* Make the container a flex container */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* Optional: Set a height for the container */
+        color:  black;
+    }
+    
+    .aboutUsContainer section {
+        text-align: center; /* Center-align the text within the section */
+    }
+    
+    .about-background{
+        
+        background-color: #1a1a1a;
+    }
+
+    .Profile-Container.Boss_Profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .profile {
+        text-align: center; /* To center text content */
+    }
+    
+    .Profile__img {
+        width: 350px;
+        height: 373px;
+    }
+    
+    .list-container {
+        color: white;
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+    
+    .list-profile {
+        text-align: left; 
+        margin-left: 0px; 
+    padding-left: 40px; 
+    }
+
+
+    .angel__profile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        grid-gap: 20px; 
+    }
+
+    .heading-container.angelTiltle{
+        text-align: center;
+        color:  white;
+    }
+
+    .angels-specialityBio {
+        text-align: left; 
+        margin-left: 0px; 
+        padding-left: 40px; 
+    }
+    
+
+    .profile__h4, .profile__h5{
+
+        text-align: left; 
+        color: white;
+        margin-left: 0px; 
+        padding-left: 40px;
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
