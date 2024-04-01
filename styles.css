@@ -25,7 +25,7 @@
  }
 
  /* BASE */
- h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6, a {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
 }
@@ -205,7 +205,7 @@ form {
  /* footer */
 
 .footer__container {
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .footer__p {
@@ -224,13 +224,12 @@ form {
 }
 
  .navbar__img {
-    margin-right: 20px; 
+    width: 100px;
+    margin-left: 20px;
 }
 
 .navbar__ul {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
+    margin-right: 20px;
 }
 
 .navbar__ul li {
@@ -239,8 +238,7 @@ form {
 
 .navbar__ul li a {
     text-decoration: none; 
-    padding: 10px; 
-    font-family: "Michroma", sans-serif;
+    padding: 20px; 
     color:  white;
 }
 
