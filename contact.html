@@ -15,11 +15,11 @@
     <header class="navbar">
         <a href="index.html"><img src="images/CA-logo.png" alt="A white capital C and A logo" class="navbar__img"></a>
         <nav>
-        <ul class="navbar__ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <ul class="navbar__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -35,58 +35,55 @@
         <!-- Contact form -->
         <section>
             <div class="container container--black flex-column-center">
-            <h2 class="contact-form__h2 header--red">Contact form</h2>
-            <form action="https://formspree.io/f/xnqebkjv" method="POST" class="contact-form__container">
-                <ul class="contact-form__ul list-style-none">
-                    <li>
-                        <label for="name">Name</label><br>
-                        <input type="text" id="name" name="user_name">
-                    </li>
-
-                    <li>
-                        <label for="mail">Email</label> <br>
-                        <input type="email" id="mail" name="user_email">
-                    </li>
-
-                    <li>
-                        <label for="telephone">Phone number</label> <br>
-                        <input type="tel" id="telephone" name="user_telephone">
-                    </li>
-
-                    <li>
-                        <label for="agent_preference">Agent preference</label> <br>
-                        <select id="user_agent_preference" name="agent_preference">
-                          <option value="alex">Alex</option>
-                          <option value="dylan">Dylan</option>
-                          <option value="natalie">Natalie</option>
-                          <option value="all_three">All three</option>
-                          <option value="none">No preference</option>
-                        </select>
-                    </li>
-
-                    <li>
+                <h2 class="contact-form__h2 header--red">Contact form</h2>
+                <form action="https://formspree.io/f/xnqebkjv" method="POST" class="contact-form__container" onsubmit="return validateForm()">
+                    <ul class="contact-form__ul list-style-none">
+                        <li>
+                            <label for="name">Name</label><br>
+                         <input type="text" id="name" name="user_name" required>
+                        </li>
+                        <li>
+                            <label for="mail">Email</label> <br>
+                         <input type="email" id="mail" name="user_email" required>
+                        </li>
+                        <li>
+                            <label for="telephone">Phone number</label> <br>
+                        <input type="tel" id="telephone" name="user_telephone" required>
+                        </li>
+                        <li>
+                            <label for="agent_preference">Agent preference</label> <br>
+                            <select id="agent_preference" name="agent_preference" required>
+                                <option value="">Choose an agent</option>
+                                <option value="alex">Alex</option>
+                                <option value="dylan">Dylan</option>
+                                <option value="natalie">Natalie</option>
+                                <option value="all_three">All three</option>
+                                <option value="none">No preference</option>
+                            </select>
+                        </li>
+                        <li>
                         <label for="msg">Message</label><br>
-                        <textarea id="msg" name="user_msg" cols="30" rows="10"></textarea>
-                    </li>
-                    <li>
+                            <textarea id="msg" name="user_msg" cols="30" rows="10"></textarea>
+                        </li>
+                        <li>
                         <button type="submit" class="contact-form__btn contact-form__btn--submit">Submit</button>
                         <button type="reset" class="contact-form__btn contact-form__btn--reset">Clear</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </section>
         
         <!-- contact cta -->
         <section>
             <div class="container">
-            <h2 class="contact-us__h2 header--red">Contact details</h2>
-            <p class="contact-us__p">Alternatively, please contact us using the information below:</p>
-            <ul class="contact-us__ul">
-                <li>Email: angels@townsendagency.com</li>
-                <li>Phone: (555) 123-4567</li>
-                <li>Location: Unknown! Duhh, we are Spies. Thats on PERIODDD!</li>
-            </ul>
+                <h2 class="contact-us__h2 header--red">Contact details</h2>
+                <p class="contact-us__p">Alternatively, please contact us using the information below:</p>
+                <ul class="contact-us__ul">
+                    <li>Email: angels@townsendagency.com</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Location: Unknown! Duhh, we are Spies. Thats on PERIODDD!</li>
+                </ul>
             </div>
         </section>
     </main>
