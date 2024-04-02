@@ -256,16 +256,6 @@ form {
     margin-top: 0.3rem;
 }
 
- /* footer */
-
-.footer__container {
-    min-height: 100px;
-}
-
-.footer__p {
-    color: white;
-}
-
 /*About us container  */
 .about-us-intro__container {
     display: flex;
@@ -319,6 +309,16 @@ form {
     flex-direction: row;
     align-items: flex-start;
     gap: 3rem;
+}
+
+ /* footer */
+
+ .footer__container {
+    min-height: 100px;
+}
+
+.footer__p {
+    color: white;
 }
 
     /* MEDIA QUERIES */
@@ -512,6 +512,7 @@ form {
 @media only screen and (min-width: 1280px) {
     .angels-profile__container {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
