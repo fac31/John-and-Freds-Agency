@@ -329,6 +329,10 @@ form {
         font-size: 1.3rem;
     }
 
+    form {
+        min-width: 300px;
+    }
+
     .nav-toggle-button {
         display: flex;
     }
