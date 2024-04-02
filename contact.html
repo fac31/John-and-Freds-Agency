@@ -12,28 +12,31 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body> 
-    <!-- Nav bar -->
-    <header class="navbar">
-        <a href="index.html"><img src="images/CA-logo.png" alt="A white capital C and A logo" class="navbar__img"></a>
-        <nav>
-            <ul class="navbar__ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img src="images/CA-logo.png" alt="A white capital C and A logo" class="navbar__img"></a>
+            <a href="#" class="nav-toggle-button">
+                <span class="nav-toggle-button__bar"></span>
+                <span class="nav-toggle-button__bar"></span>
+                <span class="nav-toggle-button__bar"></span>
+            </a>
+            <div class="navbar__links">
+                <ul class="navbar__ul list-style-none">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
+    <section>
+        <div class="hero">
+            <img src="images/contact-hero-img.jpg" alt="Three angels putting hands in the middle" class="hero__img">
+            <h1 class="hero__h1">CONTACT US</h1>
+        </div>
+    </section>
 
-        <!-- Hero image and title -->
-        <section>
-            <div class="hero">
-                <img src="images/contact-hero-img.jpg" alt="Three angels putting hands in the middle" class="hero__img">
-                <h1 class="hero__h1">CONTACT US</h1>
-            </div>
-        </section>
-
-        <!-- Contact form -->
         <section>
             <div class="container container--black flex-column-center">
                 <h2 class="contact-form__h2 header--red">Contact form</h2>
@@ -75,7 +78,6 @@
             </div>
         </section>
         
-        <!-- contact cta -->
         <section>
             <div class="container">
                 <h2 class="contact-us__h2 header--red">Contact details</h2>

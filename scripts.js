@@ -1,5 +1,12 @@
 // scripts.js
 
+const toggleButton = document.getElementsByClassName('nav-toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar__links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+
 function validateForm() {
     var name = document.getElementById('name');
     var email = document.getElementById('mail');
@@ -35,3 +42,5 @@ function validateForm() {
     }
     return true;
 }
+
+
