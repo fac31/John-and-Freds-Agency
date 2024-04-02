@@ -270,79 +270,61 @@ form {
 
 
 
-    /*About us container  */
+/*About us container  */
+.about-us-intro__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%; 
+    margin: auto;
+}
 
-    .aboutUsContainer {
-        display: flex; /* Make the container a flex container */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        height: 100vh; /* Optional: Set a height for the container */
-        color:  black;
-    }
-    
-    .aboutUsContainer section {
-        text-align: center; /* Center-align the text within the section */
-    }
-    
-    .about-background{
-        background-color: #1a1a1a;
-    }
+.profile-cards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10% 10% 10%;
+}
 
-    .Profile-Container.Boss_Profile {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .profile {
-        text-align: center; /* To center text content */
-    }
-    
-    .Profile__img {
-        width: 350px;
-        height: 373px;
-    }
-    
-    .list-container {
-        color: white;
-        max-width: 600px; 
-        margin: 0 auto; 
-    }
-    
-    .list-profile {
-        text-align: left; 
-        margin-left: 0px; 
-    padding-left: 40px; 
-    }
+.profile__card {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
 
+.profile__img {
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+}
 
-    .angel__profile {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-        grid-gap: 20px; 
-    }
+.profile__h2 {
+    text-align: center;
+    margin: 4rem;
+}
 
-    .heading-container.angelTiltle{
-        text-align: center;
-        color:  white;
-    }
+.profile__h3 {
+    text-align: center;
+}
 
-    .angels-specialityBio {
-        text-align: left; 
-        margin-left: 0px; 
-        padding-left: 40px; 
-    }
-    
+.profile__h4, .profile__h5, .profile__p {
+    text-align: left; 
+    color: white;    
+}
 
-    .profile__h4, .profile__h5{
+.profile__h5 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
 
-        text-align: left; 
-        color: white;
-        margin-left: 0px; 
-        padding-left: 40px;
+.angels-profile__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+}
 
-    }
-    
     /* MEDIA QUERIES */
 
 /* Extra small devices (phones, 600px and down) */
