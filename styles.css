@@ -266,10 +266,6 @@ form {
     color: white;
 }
 
- /**Nav Header**/
-
-
-
 /*About us container  */
 .about-us-intro__container {
     display: flex;
@@ -384,6 +380,28 @@ form {
     .stats__container {
         flex-direction: column;
      }
+    
+     .about-us-intro__container {
+        max-width: 90%; 
+    }
+
+
+    .angels-profile__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__img {
+        height: 250px;
+        width: 250px;
+    }
+    .profile-cards__container {
+        padding: 0 5% 10% 5%;
+    }
+
+    .profile__card {
+        max-width: 90%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -408,6 +426,15 @@ form {
     .stats__container {
         flex-direction: column;
      }
+
+    .angels-profile__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__card {
+        max-width: 70%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -433,6 +460,14 @@ form {
         flex-direction: column;
      }
 
+    .angels-profile__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile__card {
+        max-width: 70%;
+    }
 
 }
 
@@ -462,6 +497,18 @@ form {
     .stats__container {
         flex-direction: row;
      }
+
+    .angels-profile__container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Extra Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1280px) {
+    .angels-profile__container {
+        flex-direction: row;
+    }
 }
 
 

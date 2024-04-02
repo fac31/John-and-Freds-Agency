@@ -1,5 +1,7 @@
 // scripts.js
 
+
+
 const toggleButton = document.getElementsByClassName('nav-toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar__links')[0]
 
