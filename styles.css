@@ -25,7 +25,7 @@
  }
 
  /* BASE */
- h1, h2, h3, h4, h5, h6, a {
+ h1, h2, h3, h4, h5, h6 {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
 }
@@ -97,11 +97,8 @@ body {
 
 .container-xlg {
     width: 100%;
-    max-height: 2018px;
     padding: 10%;
 }
-
-
 
 /* service cards */
 
@@ -338,6 +335,15 @@ form {
 
     .image-text {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image-text__img, .stats__img-lg {
+        max-width: 90%;
+    }
+    
+    .image-text__text, .stats__text {
+        max-width: 75%;
     }
 
     .stats__container {
@@ -353,6 +359,15 @@ form {
 
     .image-text {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image-text__img, .stats__img-lg {
+        max-width: 90%;
+    }
+    
+    .image-text__text, .stats__text {
+        max-width: 75%;
     }
 
     .stats__container {
@@ -368,12 +383,22 @@ form {
 
     .image-text {
         flex-direction: column;
-        
+        gap: 2rem;
+    }
+
+    .image-text__img, .stats__img-lg {
+        max-width: 90%;
+    }
+    
+    .image-text__text, .stats__text {
+        max-width: 55%;
     }
 
     .stats__container {
         flex-direction: column;
      }
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -384,10 +409,19 @@ form {
 
     .image-text {
         flex-direction: row;
+        gap: 10rem;
     }
 
     .image-text--reverse {
         flex-direction: row-reverse;
+    }
+
+    .image-text__img {
+        max-width: 50%;
+    }
+    
+    .image-text__text {
+        max-width: 35%;
     }
 
     .stats__container {
